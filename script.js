@@ -9,8 +9,6 @@ function makeRows(x) {
   };
 };
 
-makeRows(5);
-
 const griditem = document.querySelector('.griditem');
 
 container.addEventListener('mouseover', () => {
@@ -18,3 +16,8 @@ container.addEventListener('mouseover', () => {
     event.target.classList.add('fillin');
   }
 });
+
+function promptMe() {
+  var size = prompt("Choose a Grid Size");
+  makeRows(size);
+}
